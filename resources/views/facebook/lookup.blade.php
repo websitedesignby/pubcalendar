@@ -75,7 +75,7 @@
          <div class="form-group">
              <label for="phone" class="col-sm-2 control-label">phone</label>
              <div class="col-sm-10">
-                  <input type="text" class="form-control" name="phone" value="{{ $result_body->phone }}" />
+                  <input type="text" class="form-control" name="phone" value="{{ $result_body->phone or "" }}" />
              </div>
          </div>
           <div class="form-group">

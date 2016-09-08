@@ -188,6 +188,8 @@ class FacebookController extends Controller
     public function lookupSave( Request $request ){
      
         $input = $request->all();
+        $input['source'] = "admin";
+        $input['medium'] = "fb/lookup";
         
         // handle image
         if( ! empty( $input['image'] ) ){

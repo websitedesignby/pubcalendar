@@ -12,6 +12,10 @@ class Location extends Model
      * @var array
      */
     protected $fillable = [
-       'fb_id', 'name', 'street', 'city', 'state', 'zip', 'country', 'email', 'phone', 'website', 'fb_url', 'longitude', 'latitude', 'image'
+       'fb_id', 'name', 'street', 'city', 'state', 'zip', 'country', 'email', 'phone', 'website', 'fb_url', 'longitude', 'latitude', 'image', 'source', 'medium'
     ];
+    
+    public function setAddedBy($addedby = 0){
+        $this->addedby = $addedby;
+    }
 }
